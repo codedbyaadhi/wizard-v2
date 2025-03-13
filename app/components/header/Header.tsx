@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <div className="absolute flex items-center justify-center w-full h-[85px]">
-      <div className="flex items-center justify-between w-[450px] h-[50px] border border-[#1A1736]">
+      <div className="flex items-center justify-between w-[450px] h-[50px] border border-[#151424] z-10">
         <div className="flex flex-col items-center justify-between h-full">
           <div className="w-[6px] h-[6px] border-t-2 border-l-2 border-t-[#5E5B7F] border-l-[#5E5B7F]"></div>
           <div className="w-[6px] h-[6px] border-b-2 border-l-2 border-b-[#5E5B7F] border-l-[#5E5B7F]"></div>
