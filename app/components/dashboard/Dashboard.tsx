@@ -25,7 +25,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center w-full h-auto">
-      <div className="flex flex-col w-[905px] h-[195px] relative top-[100px] justify-between items-center">
+      <div className="flex flex-col w-[905px] h-[195px] relative top-[100px] justify-evenly items-center">
         <div className="flex flex-col items-center justify-between w-full h-[35px]">
           <div className="flex items-center justify-between w-full h-[5px]">
             <div className="w-[5px] h-[5px] bg-white"></div>
@@ -111,7 +111,7 @@ const Dashboard: React.FC = () => {
               </div>
             </div>
           </div>
-
+          {/* The value effect grids */}
           <div className="flex items-center justify-between w-full h-[50px] px-3">
             <div
               className="flex items-center justify-center font-victorMono text-[35px] font-bold cursor-default pl-3"
@@ -124,7 +124,7 @@ const Dashboard: React.FC = () => {
               <div className="flex items-center justify-center">
                 <h5
                   className="text-[25px] font-victorMono text-[#44FFD9] cursor-default"
-                  style={{ textShadow: "0 0 5px #44FFD9, 0 0 20px #44FFD9" }}
+                  style={{ textShadow: "0 0 17px #44FFD9, 0 0 70px #44FFD9" }}
                   onMouseOver={() => setCurrentHovered(true)}
                   onMouseLeave={() => setCurrentHovered(false)}
                 >
@@ -134,7 +134,7 @@ const Dashboard: React.FC = () => {
               <div className="flex items-center justify-center">
                 <h5
                   className="text-[25px] font-victorMono text-[#DA547C] cursor-default"
-                  style={{ textShadow: "0 0 5px #DA547C, 0 0 20px #DA547C" }}
+                  style={{ textShadow: "0 0 17px #DA547C, 0 0 70px #DA547C" }}
                   onMouseOver={() => setUpcomingHovered(true)}
                   onMouseLeave={() => setUpcomingHovered(false)}
                 >
@@ -144,7 +144,7 @@ const Dashboard: React.FC = () => {
               <div className="flex items-center justify-center">
                 <h5
                   className="text-[25px] font-victorMono text-[#7D37D5] cursor-default"
-                  style={{ textShadow: "0 0 5px #7D37D5, 0 0 20px #7D37D5" }}
+                  style={{ textShadow: "0 0 17px #7D37D5, 0 0 70px #7D37D5" }}
                   onMouseOver={() => setUpdatesHovered(true)}
                   onMouseLeave={() => setUpdatesHovered(false)}
                 >
@@ -153,8 +153,20 @@ const Dashboard: React.FC = () => {
               </div>
             </div>
           </div>
+          {/* The bottom buttons  */}
+          <div className="flex items-center justify-between w-full h-[35px]">
+            <div className="flex items-center justify-between w-[235px] h-full">
+              <div className="flex w-[105px] h-full border-2 border-[#12111F] rounded-full bg-[#050412]"></div>
+              <p></p>
+              <div className="flex w-[105px] h-full border-2 border-[#12111F] rounded-full bg-[#050412]"></div>
+            </div>
+            <div className="flex items-center justify-between w-[415px] h-full">
+              <div className="flex w-[105px] h-full border-2 border-[#12111F] rounded-full bg-[#050412]"></div>
+              <div className="flex w-[105px] h-full border-2 border-[#12111F] rounded-full bg-[#050412]"></div>
+              <div className="flex w-[105px] h-full border-2 border-[#12111F] rounded-full bg-[#050412]"></div>
+            </div>
+          </div>
         </div>
-
         <div className="flex items-center justify-between w-full h-[5px]">
           <div className="flex items-center justify-between w-[300px] h-full">
             <div className="flex w-[5px] h-[5px] bg-white"></div>
